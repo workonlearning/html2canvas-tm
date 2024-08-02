@@ -124,7 +124,7 @@ const renderElement = async (element: HTMLElement, opts: Partial<Options>): Prom
             `Document cloned, element located at ${left},${top} with size ${width}x${height} using computed rendering`
         );
 
-        context.logger.debug(`Starting DOM parsing`);
+        context.logger.debug(`Starting DOM parsing...`);
         const root = parseTree(context, clonedElement);
 
         if (backgroundColor === root.styles.backgroundColor) {
