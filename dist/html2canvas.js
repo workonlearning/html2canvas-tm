@@ -7799,7 +7799,7 @@
                     return [3 /*break*/, 5];
                 case 3:
                     context.logger.debug("Document cloned, element located at " + left + "," + top + " with size " + width + "x" + height + " using computed rendering");
-                    context.logger.debug("Starting DOM parsing");
+                    context.logger.debug("Starting DOM parsing...");
                     root = parseTree(context, clonedElement);
                     if (backgroundColor === root.styles.backgroundColor) {
                         root.styles.backgroundColor = COLORS.TRANSPARENT;

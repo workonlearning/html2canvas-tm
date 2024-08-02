@@ -134,7 +134,7 @@ var renderElement = function (element, opts) { return __awaiter(void 0, void 0, 
                 return [3 /*break*/, 5];
             case 3:
                 context.logger.debug("Document cloned, element located at " + left + "," + top + " with size " + width + "x" + height + " using computed rendering");
-                context.logger.debug("Starting DOM parsing");
+                context.logger.debug("Starting DOM parsing...");
                 root = node_parser_1.parseTree(context, clonedElement);
                 if (backgroundColor === root.styles.backgroundColor) {
                     root.styles.backgroundColor = color_1.COLORS.TRANSPARENT;
